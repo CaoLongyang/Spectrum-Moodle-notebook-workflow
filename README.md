@@ -1,5 +1,5 @@
 # Spectrum-Moodle-notebook-workflow
-Python files to help students automatically download moodle/spectrum files and upload to LM notebook
+Automatically download moodle/spectrum files and upload to LM notebook and generate quiz and flashcards.
 
 ## Qick start:
 All files are needed to put in the same folder, any name is fine (ex. folder X)
