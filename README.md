@@ -220,6 +220,4 @@ __pycache__/
 
 ---
 
-*Happy studying with Oh~ Potato~~! 🥔*
-```
-
+*Happy studying with Oh~ Potato~~! *
