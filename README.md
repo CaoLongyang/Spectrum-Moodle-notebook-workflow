@@ -1,5 +1,5 @@
 # Spectrum-Moodle-notebook-workflow
-Automatically download moodle/spectrum files and upload to LM notebook and generate quiz and flashcards.
+Automatically download moodle/spectrum files and upload to LM notebook and generate quiz and flashcards. For um students.
 
 Here is a comprehensive, production-ready, and well-structured `README.md` written in English for your GitHub repository.
 
@@ -184,39 +184,6 @@ python notebooklm_pipeline.py --yes
 - Folders containing `exam` (e.g., `EXAM`) will be uploaded to NotebookLM for reference, but will **not** trigger quiz/flashcard creation.
 - Avoids regenerating artifacts if cloud documents already match local files.
 - Uses prompts configured in `prompts/quiz.txt` and `prompts/flashcards.txt`.
-
----
-
-## 🔒 Security Best Practices
-
-Add a `.gitignore` to your local repository before pushing to GitHub to prevent leaking tokens or user data:
-
-```gitignore
-# Sensitive Tokens
-token.txt
-token.text
-.att.json
-
-# Local Generated Data
-UM_Courses/
-hidden_tasks.json
-selected_courses.json
-downloaded.json
-*.part
-
-# Python cache
-__pycache__/
-*.py[cod]
-.venv/
-```
-
----
-
-## 💡 Troubleshooting
-
-- **Token Errors**: Ensure that your SPeCTRUM token has not expired and that your IP/Network has access to `https://spectrum.um.edu.my`.
-- **NotebookLM Rate Limits**: Google NotebookLM may enforce temporary rate limits. The pipeline waits automatically; if exhausted, simply rerun the script later. It will pick up where it left off.
-- **Encoding Issues on Windows**: If terminal characters appear scrambled, run in Windows Terminal (`wt.exe`) or Powershell with UTF-8 enabled.
 
 ---
 
